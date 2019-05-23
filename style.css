@@ -37,6 +37,8 @@ ul li:last-child {
 
 /* 
 FOR CHILDS:
+ul:first-child
+ul:last-child
 ul li:nth-child(1) // Cible le premier enfant ----->
 ul li:nth-last-child(1) // Cible le dernier enfant <-----
 
@@ -44,6 +46,8 @@ ul li:nth-child(2n) = ul li:nth-child(even) // Pair
 ul li:nth-child(2n + 1) = ul li:nth-child(odd) // Impair
 
 FOR CHILDS TYPES:
+ul:first-of-type
+ul:last-of-type
 ul li:nth-of-type(1) // Cible le premier enfant de même type ----->
 ul li:nth-last-of-type(1) // Cible le dernier enfant de même type <-----
 
