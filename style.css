@@ -44,7 +44,7 @@ ul li:nth-child(2n) = ul li:nth-child(even) // Pair
 ul li:nth-child(2n + 1) = ul li:nth-child(odd) // Impair
 
 FOR CHILDS TYPES:
-ul li:nth-last-child(1) // Cible le premier enfant de même type ----->
+ul li:nth-of-type(1) // Cible le premier enfant de même type ----->
 ul li:nth-last-of-type(1) // Cible le dernier enfant de même type <-----
 
 ul li:nth-of-type(2n) = ul li:nth-of-type(even)
