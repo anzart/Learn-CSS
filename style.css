@@ -9,9 +9,13 @@ body {
 }
 
 ul {
+  margin: 0 auto;
+  width: 960px;
   background: rgb(255, 157, 157);
   padding: 20px;
   list-style: none;
+  /* FLEXBOX */
+  display: flex;
 }
 
 ul li {
