@@ -3,11 +3,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font: 1em sans-serif;
 }
 
+form fieldset {
+  border-radius: 10px;
+}
+form fieldset legend {
+  color: white;
+  padding: 4px 1.3em;
+  background: rgb(59, 59, 59);
+  border-radius: 50px;
+}
 form {
-  background: rgb(231, 231, 231);
+  background: rgb(241, 241, 241);
   padding: 30px;
+  border-radius: 10px;
 }
 
 form input[type="checkbox"] {
@@ -20,8 +31,12 @@ form input[type="checkbox"] {
 
 form input[type="checkbox"] + span {
   background: url(./images/circle.svg) left center / 1em no-repeat;
-  padding: 10px 1.2em;
+  font-size: 21px;
+  padding: 10px 1.3em;
+  margin: 10px;
+  cursor: pointer;
   display: inline-block;
+  transition: background 0.3s;
 }
 
 form input[type="checkbox"]:checked + span {
