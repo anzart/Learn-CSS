@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: rgb(231, 231, 231);
+  padding: 30px;
+}
+
+form input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+form input[type="checkbox"] + span {
+  background: url(./images/circle.svg) left center / 1em no-repeat;
+  padding: 10px 1.2em;
+  display: inline-block;
+}
+
+form input[type="checkbox"]:checked + span {
+  background: url(./images/check-circle.svg) left center / 1em no-repeat;
+}
