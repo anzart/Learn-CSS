@@ -1,17 +1,22 @@
 .hg__header {
   grid-area: header;
+  background: rgb(245, 122, 122);
 }
 .hg__footer {
   grid-area: footer;
+  background: rgb(255, 238, 2);
 }
 .hg__main {
   grid-area: main;
+  background: rgb(145, 145, 145);
 }
 .hg__left {
   grid-area: navigation;
+  background: rgb(13, 204, 238);
 }
 .hg__right {
   grid-area: ads;
+  background: rgb(83, 204, 130);
 }
 
 .hg {
@@ -44,19 +49,4 @@
       50px
       30px;
   }
-}
-
-header {
-  background: rgb(245, 122, 122);
-}
-main {
-  background: rgb(145, 145, 145);
-}
-
-aside {
-  background: rgb(65, 201, 206);
-}
-
-footer {
-  background: rgb(255, 238, 2);
 }
