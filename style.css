@@ -1,22 +1,21 @@
 .hg__header {
   grid-area: header;
-  background: rgb(245, 122, 122);
+  background: rgb(255, 191, 15);
 }
 .hg__footer {
   grid-area: footer;
-  background: rgb(255, 238, 2);
+  background: rgb(36, 36, 36);
 }
 .hg__main {
   grid-area: main;
-  background: rgb(145, 145, 145);
 }
 .hg__left {
   grid-area: navigation;
-  background: rgb(13, 204, 238);
+  background: rgb(180, 180, 180);
 }
 .hg__right {
   grid-area: ads;
-  background: rgb(83, 204, 130);
+  background: rgb(180, 180, 180);
 }
 
 .hg {
