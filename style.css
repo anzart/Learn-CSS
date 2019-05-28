@@ -1,51 +1,69 @@
+/* ======================================================================= */
+/* HOLY GRAIL LAYOUT */
+/* ======================================================================= */
+
 .hg__header {
   grid-area: header;
+  /* Styles */
   background: rgb(255, 191, 15);
+  position: fixed;
+  width: 100%;
 }
 .hg__footer {
   grid-area: footer;
+  /* Styles */
   background: rgb(36, 36, 36);
 }
 .hg__main {
   grid-area: main;
-}
-.hg__left {
-  grid-area: navigation;
-  background: rgb(180, 180, 180);
-}
-.hg__right {
-  grid-area: ads;
-  background: rgb(180, 180, 180);
+  /* Styles */
 }
 
 .hg {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "navigation  main ads "
-    "footer footer footer";
-  grid-template-columns: 150px 1fr 150px;
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
   grid-template-rows:
     100px
     1fr
-    30px;
+    50px;
   min-height: 100vh;
+  /* Styles */
 }
 
 @media screen and (max-width: 600px) {
   .hg {
     grid-template-areas:
       "header"
-      "navigation"
       "main"
-      "ads"
       "footer";
     grid-template-columns: 100%;
     grid-template-rows:
       100px
-      50px
       1fr
-      50px
-      30px;
+      50px;
+    /* Styles */
   }
+}
+/* ======================================================================= */
+/* MENU */
+/* ======================================================================= */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+img {
+  width: 200px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  border: 1px solid #000;
 }
