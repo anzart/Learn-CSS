@@ -27,9 +27,15 @@ ul li {
 }
 
 /* 
+STRUCTURAL PSEUDO-CLASS  » CSS Selector Level 3:
+
+:root
+:empty
+
 FOR CHILDS:
 ul:first-child
 ul:last-child
+ul:only-child
 ul li:nth-child(1) // Cible le premier enfant à partir de début  |----->
 ul li:nth-last-child(1) // Cible le premier enfant à partir de la fin  <-----|
 
@@ -39,6 +45,7 @@ ul li:nth-child(2n + 1) = ul li:nth-child(odd) // Impair (Cibles les éléments 
 FOR CHILDS TYPES:
 ul:first-of-type
 ul:last-of-type
+ul:only-of-type
 ul li:nth-of-type(1) // Cible le premier enfant de même type à partir de début |----->
 ul li:nth-last-of-type(1) // Cible le dernier enfant de même type à partir de la fin <-----|
 
