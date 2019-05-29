@@ -99,12 +99,16 @@ ul li a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 1.2em;
-  transition: all 0.3s;
+  transition: background 0.3s, color 0.2s;
 }
 
 ul li a:hover {
   background: rgba(255, 255, 255, 0.39);
   border-radius: 10px;
+}
+
+ul li a:active {
+  color: rgb(252, 252, 252);
 }
 
 .action h1 {
