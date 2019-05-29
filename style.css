@@ -107,11 +107,18 @@ ul li a:hover {
   border-radius: 10px;
 }
 
-ul li a:active {
-  color: rgb(252, 252, 252);
+ul li a:focus {
+  color: rgb(207, 52, 52);
 }
 
 .action h1 {
   font-size: 4em;
   line-height: 0;
+}
+
+h2 + p::first-letter {
+  padding: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  initial-letter: 3;
 }
