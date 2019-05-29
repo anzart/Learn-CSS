@@ -7,9 +7,18 @@
 /* ======================================================================= */
 /* HOLY GRAIL LAYOUT */
 /* ======================================================================= */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
 
 .hg__header {
   grid-area: header;
+
   /* Styles */
   font-family: "Playfair Display", serif;
   background: rgb(255, 191, 15);
@@ -17,46 +26,60 @@
   width: 100%;
   padding: 0px 3em;
 }
+
 .hg__footer {
   grid-area: footer;
+
   /* Styles */
   background: rgb(36, 36, 36);
 }
+
 .hg__main {
   grid-area: main;
+
   /* Styles */
   max-width: 900px;
   margin: 0 auto;
   padding: 30px;
 }
 
+.action {
+  grid-area: action;
+
+  /* Styles */
+  background: url(./images/topography.svg);
+  background-color: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hg {
   display: grid;
   grid-template-areas:
     "header"
+    "action"
     "main"
     "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 79px 500px 1fr 200px;
 
-  min-height: 100vh;
   /* Styles */
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .hg {
     grid-template-areas:
       "header"
+      "action"
       "main"
       "footer";
     grid-template-columns: 100%;
-    grid-template-rows:
-      50px
-      1fr
-      50px;
-    /* Styles */
+    grid-template-rows: 50px 500px 1fr 200px;
+    
   }
-}
+} */
 /* ======================================================================= */
 /* MENU */
 /* ======================================================================= */
@@ -68,8 +91,7 @@
 }
 
 img {
-  width: 50px;
-  height: 50px;
+  max-height: 50px;
 }
 
 .menu ul {
@@ -95,4 +117,9 @@ ul li a {
 ul li a:hover {
   background: rgba(255, 255, 255, 0.39);
   border-radius: 10px;
+}
+
+.action h1 {
+  font-size: 4em;
+  line-height: 0;
 }
