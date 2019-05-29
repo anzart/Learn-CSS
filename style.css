@@ -68,18 +68,6 @@ html {
   /* Styles */
 }
 
-/* @media screen and (max-width: 600px) {
-  .hg {
-    grid-template-areas:
-      "header"
-      "action"
-      "main"
-      "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 500px 1fr 200px;
-    
-  }
-} */
 /* ======================================================================= */
 /* MENU */
 /* ======================================================================= */
