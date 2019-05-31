@@ -9,15 +9,18 @@ body {
 form fieldset {
   border-radius: 10px;
   text-align: center;
+  border: 1px solid white;
 }
 form fieldset legend {
-  color: white;
+  color: rgb(39, 39, 39);
   padding: 4px 1.3em;
-  background: rgb(59, 59, 59);
+  background: rgb(255, 255, 255);
   border-radius: 50px;
 }
 form {
-  background: rgb(241, 241, 241);
+  color: white;
+  background: linear-gradient(45deg, #2196f3 30%, #21cbf3 90%);
+  box-shadow: 0 3px 5px 2px rgba(33, 203, 243, 0.3);
   padding: 30px;
   border-radius: 10px;
 }
@@ -32,6 +35,7 @@ form input[type="checkbox"] {
 
 form input[type="checkbox"] + span {
   background: url(./images/circle.svg) left center / 1em no-repeat;
+  stroke-color: white;
   font-size: 21px;
   padding: 10px 1.3em;
   margin: 10px;
