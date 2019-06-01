@@ -20,16 +20,6 @@ ul li {
   align-items: center;
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 500px;
-}
-
-ul li {
-  flex-grow: 1;
-}
 ul li:nth-child(1) {
   background: #00a1f1;
 }
@@ -42,4 +32,18 @@ ul li:nth-child(3) {
 
 ul li:nth-child(4) {
   background: #f65314;
+}
+
+/*==================================================*/
+/*==================================================*/
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 500px;
+}
+
+ul li {
+  flex-grow: 1;
 }
