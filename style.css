@@ -1,0 +1,45 @@
+/*
+COLOR   GOOGLE      MICROSOFT
+blue:   #4285F4     #00A1F1
+green:  #34A853     #7CBB00
+yellow: #FBBC05     #FFBB00
+red:    #EA4335     #F65314
+*/
+
+ul {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgb(241, 193, 193);
+  padding: 10px;
+}
+ul li {
+  list-style: none;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 500px;
+}
+
+ul li {
+  flex-grow: 1;
+}
+ul li:nth-child(1) {
+  background: #00a1f1;
+}
+ul li:nth-child(2) {
+  background: #7cbb00;
+}
+ul li:nth-child(3) {
+  background: #ffbb00;
+}
+
+ul li:nth-child(4) {
+  background: #f65314;
+}
