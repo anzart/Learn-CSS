@@ -12,7 +12,7 @@ form fieldset {
   border: 1px solid white;
 }
 form fieldset legend {
-  color: rgb(39, 39, 39);
+  color: #2196f3;
   padding: 4px 1.3em;
   background: rgb(255, 255, 255);
   border-radius: 50px;
@@ -35,13 +35,12 @@ form input[type="checkbox"] {
 
 form input[type="checkbox"] + span {
   background: url(./images/circle.svg) left center / 1em no-repeat;
-  stroke-color: white;
   font-size: 21px;
   padding: 10px 1.3em;
   margin: 10px;
   cursor: pointer;
   display: inline-block;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
 form input[type="checkbox"]:checked + span {
