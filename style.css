@@ -46,3 +46,10 @@ form input[type="checkbox"] + span {
 form input[type="checkbox"]:checked + span {
   background: url(./images/check-circle.svg) left center / 1em no-repeat;
 }
+
+@media screen and (max-width: 400px) {
+  form input[type="checkbox"] + span {
+    display: flex;
+    margin: 0;
+  }
+}
