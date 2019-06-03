@@ -23,6 +23,7 @@ html {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 .hg__header {
@@ -169,7 +170,6 @@ section.bottom-action div {
 /* ======================================================================= */
 
 footer {
-  background: #000;
   display: flex;
   flex-flow: row wrap;
 }
@@ -184,8 +184,13 @@ footer a:hover {
 
 footer section {
   flex-grow: 1;
-  padding: 0 30px;
+  padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+footer p {
+  color: var(--white);
+  font-size: 0.59rem;
 }
 
 /* ======================================================================= */
@@ -197,8 +202,8 @@ footer section {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 320px) {
-  footer section:first-child {
+@media screen and (max-width: 375px) {
+  footer section:nth-child(1) {
     text-align: center;
   }
 }
