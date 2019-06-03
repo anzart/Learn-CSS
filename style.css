@@ -1,8 +1,18 @@
 /* ======================================================================= */
 /* FONTS */
 /* ======================================================================= */
-
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap");
+
+/* ======================================================================= */
+/* VARIABLES */
+/* ======================================================================= */
+
+:root {
+  --yellow: rgb(255, 191, 15);
+  --black: rgb(36, 36, 36);
+  --dark: rgb(15, 15, 15);
+  --white: rgb(255, 255, 255);
+}
 
 /* ======================================================================= */
 /* HOLY GRAIL LAYOUT */
@@ -21,7 +31,7 @@ html {
 
   /* Styles */
   font-family: "Playfair Display", serif;
-  background: rgb(255, 191, 15);
+  background: var(--yellow);
   position: fixed;
   width: 100%;
   padding: 0px 3em;
@@ -31,7 +41,7 @@ html {
   grid-area: footer;
 
   /* Styles */
-  background: rgb(36, 36, 36);
+  background: var(--black);
 }
 
 .hg__main {
@@ -48,8 +58,19 @@ html {
 
   /* Styles */
   background: url(./images/topography.svg);
-  background-color: rgb(15, 15, 15);
-  color: white;
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-action {
+  grid-area: bottom-action;
+  /* Styles */
+  background-color: var(--dark);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,8 +83,14 @@ html {
     "header"
     "action"
     "main"
+    "bottom-action"
     "footer";
-  grid-template-rows: 79px 500px 1fr 200px;
+  grid-template-rows:
+    79px
+    500px
+    1fr
+    120px
+    300px;
 
   /* Styles */
 }
@@ -90,27 +117,39 @@ img {
   list-style: none;
 }
 
-ul li a {
-  display: inline-block;
+a,
+li {
   text-decoration: none;
-  color: rgb(32, 32, 32);
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: var(--black);
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 1.2em;
   border-radius: 0;
-
   transition: all 0.3s, color 0.2s;
 }
 
-ul li a:hover {
+header ul li a:hover {
   background: rgba(255, 255, 255, 0.39);
   border-radius: 6px;
 }
 
-ul li a:focus {
-  color: rgb(207, 52, 52);
+header ul li a:focus {
+  color: var(--white);
+}
+
+/* ======================================================================= */
+/* ACTION */
+/* ======================================================================= */
+
+.action div {
+  display: flex;
 }
 
 .action h1 {
@@ -118,9 +157,41 @@ ul li a:focus {
   line-height: 0;
 }
 
-h2 + p::first-letter {
-  padding: 10px;
-  font-size: 3em;
-  font-weight: bold;
-  initial-letter: 3;
+.action a,
+.bottom-action a {
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 10px 25px;
+  white-space: nowrap;
+  margin-right: 20px;
+  transition: background-color 0.2s ease-out;
+}
+.action a:hover,
+.bottom-action a:hover {
+  background-color: var(--white);
+}
+
+/* ======================================================================= */
+/* ACTION */
+/* ======================================================================= */
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: var(--white);
+  transition: color 0.2s ease-in-out;
+}
+footer a:hover {
+  color: var(--yellow);
+}
+
+footer section ul {
+  padding: 0;
+  /* border: 1px solid rgb(245, 173, 173); */
 }
