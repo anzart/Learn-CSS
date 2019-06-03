@@ -6,7 +6,6 @@
 /* ======================================================================= */
 /* VARIABLES */
 /* ======================================================================= */
-
 :root {
   --yellow: rgb(255, 191, 15);
   --black: #282c34;
@@ -75,25 +74,13 @@ html {
 
 .hg {
   display: grid;
-  grid-template-areas:
-    "header"
-    "action"
-    "main"
-    "bottom-action"
-    "footer";
-  grid-template-rows:
-    79px
-    500px
-    1fr
-    200px;
-
-  /* Styles */
+  grid-template-areas: "header" "action" "main" "bottom-action" "footer";
+  grid-template-rows: 79px 500px 1fr 200px;
 }
 
 /* ======================================================================= */
 /* MENU */
 /* ======================================================================= */
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -156,6 +143,11 @@ header ul li a:focus {
 /*ACTION +  BOTTOM ACTION */
 /* ======================================================================= */
 
+section.bottom-action div {
+  display: flex;
+  align-items: center;
+}
+
 /* Buttons styles: */
 .action a,
 .bottom-action a {
@@ -180,8 +172,6 @@ footer {
   background: #000;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 footer a {
@@ -191,17 +181,11 @@ footer a {
 footer a:hover {
   color: var(--yellow);
 }
-footer section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 
-footer section/* :not(:last-child)  */ {
-  padding: 0 50px;
+footer section {
   flex-grow: 1;
-  border: 2px solid rgba(255, 255, 255, 0.12);
+  padding: 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* ======================================================================= */
@@ -211,5 +195,10 @@ footer section/* :not(:last-child)  */ {
   .menu {
     padding-top: 20px;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer section:first-child {
+    text-align: center;
   }
 }
