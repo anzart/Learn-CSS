@@ -9,8 +9,8 @@
 
 :root {
   --yellow: rgb(255, 191, 15);
-  --black: rgb(36, 36, 36);
-  --dark: rgb(15, 15, 15);
+  --black: #282c34;
+  --dark: #20232a;
   --white: rgb(255, 255, 255);
 }
 
@@ -41,7 +41,8 @@ html {
   grid-area: footer;
 
   /* Styles */
-  background: var(--black);
+  background: var(--dark);
+  border-top: 5px solid rgba(255, 255, 255, 0.12);
 }
 
 .hg__main {
@@ -53,7 +54,8 @@ html {
   padding: 30px;
 }
 
-.action {
+.action,
+.bottom-action {
   grid-area: action;
 
   /* Styles */
@@ -69,12 +71,6 @@ html {
 .bottom-action {
   grid-area: bottom-action;
   /* Styles */
-  background-color: var(--dark);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hg {
@@ -89,8 +85,7 @@ html {
     79px
     500px
     1fr
-    120px
-    300px;
+    200px;
 
   /* Styles */
 }
@@ -118,15 +113,15 @@ img {
 }
 
 a,
-li {
+li,
+ul {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 
 header ul li a {
-  display: inline-block;
   color: var(--black);
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,6 +152,11 @@ header ul li a:focus {
   line-height: 0;
 }
 
+/* ======================================================================= */
+/*ACTION +  BOTTOM ACTION */
+/* ======================================================================= */
+
+/* Buttons styles: */
 .action a,
 .bottom-action a {
   text-decoration: none;
@@ -164,7 +164,7 @@ header ul li a:focus {
   color: var(--black);
   padding: 10px 25px;
   white-space: nowrap;
-  margin-right: 20px;
+  margin: 10px;
   transition: background-color 0.2s ease-out;
 }
 .action a:hover,
@@ -173,10 +173,11 @@ header ul li a:focus {
 }
 
 /* ======================================================================= */
-/* ACTION */
+/* FOOTER */
 /* ======================================================================= */
 
 footer {
+  background: #000;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -190,8 +191,25 @@ footer a {
 footer a:hover {
   color: var(--yellow);
 }
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-footer section ul {
-  padding: 0;
-  /* border: 1px solid rgb(245, 173, 173); */
+footer section/* :not(:last-child)  */ {
+  padding: 0 50px;
+  flex-grow: 1;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ======================================================================= */
+/* MEDIAS QUERIES */
+/* ======================================================================= */
+@media screen and (max-width: 600px) {
+  .menu {
+    padding-top: 20px;
+    flex-direction: column;
+  }
 }
