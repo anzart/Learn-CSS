@@ -33,6 +33,7 @@ html {
   font-family: "Playfair Display", serif;
   background: var(--yellow);
   position: fixed;
+  z-index: 10;
   width: 100%;
   padding: 0px 3em;
 }
@@ -191,6 +192,30 @@ footer section {
 footer p {
   color: var(--white);
   font-size: 0.59rem;
+}
+
+/* ======================================================================= */
+/* MEDIAS QUERIES */
+/* ======================================================================= */
+a.top svg {
+  stroke: white;
+}
+
+a.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background: var(--dark);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+a.top:hover {
+  background: var(--yellow);
 }
 
 /* ======================================================================= */
