@@ -213,6 +213,7 @@ a.top {
   right: 0;
   transition: background 0.2s;
   cursor: pointer;
+  border-top-left-radius: 18px;
 }
 a.top:hover {
   background: var(--yellow);
