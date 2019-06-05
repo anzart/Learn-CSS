@@ -35,7 +35,6 @@ html {
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding: 0px 3em;
 }
 
 .hg__footer {
@@ -77,7 +76,7 @@ html {
 .hg {
   display: grid;
   grid-template-areas: "header" "action" "main" "bottom-action" "footer";
-  grid-template-rows: 79px 500px 1fr 200px;
+  grid-template-rows: 50px 500px 1fr 200px;
 }
 
 /* ======================================================================= */
@@ -85,20 +84,22 @@ html {
 /* ======================================================================= */
 .menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
 img {
+  display: flex;
   max-height: 50px;
+  margin: 10px 0;
 }
 
 .menu ul {
   display: flex;
-  justify-content: center;
 }
 .menu ul li {
+  display: flex;
   list-style: none;
+  flex-grow: 1;
 }
 
 a,
@@ -107,6 +108,7 @@ ul {
   text-decoration: none;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 header ul li a {
@@ -115,13 +117,11 @@ header ul li a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 1.2em;
-  border-radius: 0;
   transition: all 0.3s, color 0.2s;
 }
 
 header ul li a:hover {
   background: rgba(255, 255, 255, 0.39);
-  border-radius: 6px;
 }
 
 header ul li a:focus {
@@ -223,10 +223,10 @@ a.toTop:hover {
 /* MEDIAS QUERIES */
 /* ======================================================================= */
 @media screen and (max-width: 600px) {
-  .menu {
+  /* .menu {
     padding-top: 20px;
     flex-direction: column;
-  }
+  } */
 }
 @media screen and (max-width: 375px) {
   footer section:nth-child(1) {
