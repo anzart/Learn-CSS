@@ -149,7 +149,7 @@ header ul li a:focus {
 /*ACTION +  BOTTOM ACTION */
 /* ======================================================================= */
 
-section.bottom-action div {
+section.bottom-action nav {
   display: flex;
   align-items: center;
 }
