@@ -195,13 +195,13 @@ footer p {
 }
 
 /* ======================================================================= */
-/* MEDIAS QUERIES */
+/* BOTTOM RIGHT BUTTON 'TO TOP' */
 /* ======================================================================= */
-a.top svg {
+a.toTop svg {
   stroke: white;
 }
 
-a.top {
+a.toTop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,11 +211,11 @@ a.top {
   position: fixed;
   bottom: 0;
   right: 0;
-  transition: background 0.2s;
+  transition: background 0.3s;
   cursor: pointer;
   border-top-left-radius: 18px;
 }
-a.top:hover {
+a.toTop:hover {
   background: var(--yellow);
 }
 
