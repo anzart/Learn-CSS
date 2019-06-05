@@ -84,8 +84,8 @@ html {
 /* ======================================================================= */
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height: 100%;
 }
 
 img {
@@ -221,18 +221,4 @@ a.toTop {
 }
 a.toTop:hover {
   background: var(--yellow);
-}
-
-/* ======================================================================= */
-/* MEDIAS QUERIES */
-/* ======================================================================= */
-@media screen and (max-width: 600px) {
-  .menu ul {
-    flex: 0 0 0;
-  }
-}
-@media screen and (max-width: 375px) {
-  footer section:nth-child(1) {
-    text-align: center;
-  }
 }
