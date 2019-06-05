@@ -57,9 +57,19 @@ body {
 .content-3 {
   grid-column: column3-start / content-end;
   grid-row: row3-start / row4-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .footer {
   grid-column: main-start / main-end;
   grid-row: row4-start / row4-end;
+}
+
+div {
+  border: 1px solid #000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
