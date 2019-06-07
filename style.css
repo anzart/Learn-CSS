@@ -115,7 +115,6 @@ ul {
 header ul li a {
   color: var(--black);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px 1.2em;
   transition: all 0.3s, color 0.2s;
@@ -151,7 +150,6 @@ header ul li a:focus {
 
 section.bottom-action nav {
   display: flex;
-  align-items: center;
 }
 
 /* Buttons styles: */
